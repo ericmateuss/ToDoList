@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Menu {
-    public Menu(){
+    private Funcoes funcao = new Funcoes();
+    public void userMenu(){
         Scanner scanner = new Scanner(System.in);
 
         boolean saida = false;
@@ -13,18 +14,24 @@ public class Menu {
 
             switch(escolha){
                 case 0:
+                    Opcoes();
                     break;
                 case 1:
+                    funcao.adicionarTask();
                     break;
                 case 2:
+                    funcao.printarLista();
                     break;
                 case 3:
+                    funcao.deletarTask();
                     break;
                 case 4:
                     break;
                 case 5:
                     break;
                 case 6:
+                    saida = true;
+                    System.exit(0);
                     break;
             }
         }
@@ -41,3 +48,6 @@ public class Menu {
         System.out.println("\t3 - Para sair.");
     }
 }
+
+
+

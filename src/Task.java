@@ -1,8 +1,18 @@
-public class Task {
+public class Task{
     private String task;
     private String descricao;
     private String status;
+    private String dataTermino;
     private int prioridade;
+
+    public Task(String task, String descricao, String status, String dataTermino, int prioridade){
+        super();
+        this.task=task;
+        this.descricao=descricao;
+        this.status=status;
+        this.dataTermino=dataTermino;
+        this.prioridade=prioridade;
+    }
     public String getTask(){
         return task;
     }
@@ -27,4 +37,12 @@ public class Task {
     public void setPrioridade(int prioridade){
         this.prioridade = prioridade;
     }
+
+    public String getDataTermino(){
+        return dataTermino;
+    }
+    public void setDataTerminos(String dataTermino) {
+        this.dataTermino = dataTermino;
+    }
+
 }
