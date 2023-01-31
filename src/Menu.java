@@ -45,7 +45,7 @@ public class Menu {
         System.out.println("\t3 - Para deletar uma Task.");
         System.out.println("\t4 - Para marcar uma Task como DOING.");
         System.out.println("\t5 - Para marcar uma Task como DONE.");
-        System.out.println("\t3 - Para sair.");
+        System.out.println("\t6 - Para sair.");
     }
 }
 

@@ -67,6 +67,7 @@ public class Funcoes {
         for(int i = 0; i<tasks.size(); i++){
             if(nome.equals(tasks.get(i).getTask())){
                 tasks.remove(i);
+
             }
         }
     }
