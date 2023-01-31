@@ -26,10 +26,9 @@ public class Menu {
                     funcao.deletarTask();
                     break;
                 case 4:
+                    funcao.salvarTask();
                     break;
                 case 5:
-                    break;
-                case 6:
                     saida = true;
                     System.exit(0);
                     break;
@@ -43,9 +42,8 @@ public class Menu {
         System.out.println("\t1 - Adicionar uma Task.");
         System.out.println("\t2 - Printar toda a lista de Tasks.");
         System.out.println("\t3 - Para deletar uma Task.");
-        System.out.println("\t4 - Para marcar uma Task como DOING.");
-        System.out.println("\t5 - Para marcar uma Task como DONE.");
-        System.out.println("\t6 - Para sair.");
+        System.out.println("\t4 - Para alterar uma Task");
+        System.out.println("\t5 - Para sair.");
     }
 }
 

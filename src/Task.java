@@ -5,13 +5,16 @@ public class Task{
     private String dataTermino;
     private int prioridade;
 
-    public Task(String task, String descricao, String status, String dataTermino, int prioridade){
+    private String categoria;
+
+    public Task(String task, String descricao, String status, String dataTermino, int prioridade, String categoria){
         super();
         this.task=task;
         this.descricao=descricao;
         this.status=status;
         this.dataTermino=dataTermino;
         this.prioridade=prioridade;
+        this.categoria=categoria;
     }
     public String getTask(){
         return task;
@@ -43,6 +46,13 @@ public class Task{
     }
     public void setDataTerminos(String dataTermino) {
         this.dataTermino = dataTermino;
+    }
+
+    public String getCategoria(){
+        return categoria;
+    }
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
     }
 
 }
